@@ -3,7 +3,6 @@ export const createWebSocket = (url) => {
 
   socket.onopen = function (e) {
     console.log('[open] Conexión establecida');
-    socket.send('Hola, servidor!');
   };
 
   socket.onmessage = function (event) {
