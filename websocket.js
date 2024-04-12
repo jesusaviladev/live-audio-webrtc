@@ -5,9 +5,9 @@ export const createWebSocket = (url) => {
     console.log('[open] Conexión establecida');
   };
 
-  socket.onmessage = function (event) {
-    console.log(`[message] Datos recibidos del servidor: ${event.data}`);
-  };
+  // socket.onmessage = function (event) {
+  //   console.log(`[message] Datos recibidos del servidor: ${event.data}`);
+  // };
 
   socket.onclose = function (event) {
     if (event.wasClean) {
